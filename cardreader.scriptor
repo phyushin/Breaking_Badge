@@ -1,0 +1,14 @@
+#!/usr/bin/scriptor
+
+reset
+# Connect the Card
+# SCardTransmit: 1 [255, 164, 0, 0, 1, 6]
+FF A4 00 00 01 06
+# Card correctly initialized
+
+# Read the Card
+# SCardTransmit: 1 [255, 176, 0, 0, 255]
+# SCardTransmit: 1 [255, 178, 0, 0, 4]
+
+FF B0 00 00 FF
+FF B2 00 00 04
